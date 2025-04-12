@@ -57,3 +57,41 @@ section#login > div#form {
     display: block;
     padding: 10px;
 }
+
+div#form > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#form > p {
+    font-size: 0.8em;
+
+}
+input#ilogin {
+    background-color: #0B260A;
+    color: #94F29A;
+    bottom: #124010;
+    margin-top: 5px;
+    padding: 2px;
+}
+input#ilogin::placeholder{
+    color: #94F29A;
+}
+
+input#isenha {
+    background-color: #0B260A;
+    color: #94F29A;
+    bottom: #124010;
+    margin-top: 5px;
+    padding: 2px;
+}
+input#isenha::placeholder{
+    color: #94F29A;
+}
+
+input#submit {
+    background-color: #0B260A;
+    bottom: #124010;
+    margin-top: 5px;
+    padding: 2px;
+}
