@@ -33,17 +33,17 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
 
     background-color: #0B260A;
     width: 250px;
-    height: 500px;
+    height: 480px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px #0b260a75;
 
     transition: width 0.3s, height 0.3s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 
 section#login > div#image {
@@ -64,7 +64,10 @@ div#form > h1 {
 }
 
 div#form > p {
+    display: block;
+    text-align: justify;
     font-size: 0.8em;
+    padding: 8px;
 
 }
 input#ilogin {
@@ -72,7 +75,10 @@ input#ilogin {
     color: #94F29A;
     bottom: #124010;
     margin-top: 5px;
-    padding: 2px;
+    padding: 8px;
+    border-color: #94F29A;
+    border-radius: 5px;
+    width: calc(100% - 70px);
 }
 input#ilogin::placeholder{
     color: #94F29A;
@@ -83,7 +89,12 @@ input#isenha {
     color: #94F29A;
     bottom: #124010;
     margin-top: 5px;
-    padding: 2px;
+    padding: 8px;
+    border-color: #94F29A;
+    border-radius: 5px;
+    width: calc(100% - 52px);
+    height: 100%;
+    
 }
 input#isenha::placeholder{
     color: #94F29A;
@@ -91,7 +102,45 @@ input#isenha::placeholder{
 
 input#submit {
     background-color: #0B260A;
+    width: 100%;
+    display: block;
     bottom: #124010;
-    margin-top: 5px;
-    padding: 2px;
+    margin-top: 8px;
+    padding: 8px;
+    border-radius: 5px;
+    border-color: #94F29A;
+    cursor: pointer;
+    margin: 10px 0px;
+}
+input#submit:hover {
+    background-color: #94F29A;
+    width: 100%;
+    display: block;
+    bottom: #124010;
+    margin-top: 8px;
+    padding: 8px;
+    border-radius: 5px;
+    border-color: #0B260A;
+    color: #0B260A;
+    margin: 10px 0px;
+}
+a.submit {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    border: #94F29A;
+    border: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px 0px;
+}
+a.submit:hover {
+    display: block;
+    border: #0B260A;
+    background-color: #94F29A;
+    color: #0B260A;
+    border: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px 0px;
 }
